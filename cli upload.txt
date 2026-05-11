@@ -1,0 +1,23 @@
+
+cd C:\Github\BrandcoConnected\Firmware
+
+
+
+DISPLAY
+arduino-cli.exe upload -p COM130 --fqbn adafruit:samd:adafruit_feather_m0 --input-file C:\Github\BrandcoConnected\Firmware\display\Display_fw3-3_pcb_2-2.bin
+
+MINI
+arduino-cli.exe upload -p COM134 -v --fqbn adafruit:samd:adafruit_feather_m0 --input-file C:\Github\BrandcoConnected\Firmware\mini\Mini_PCB1_5_FW3.bin
+
+STREAM
+arduino-cli.exe upload -p COM81 -v --fqbn adafruit:samd:adafruit_feather_m0 --input-file C:\Github\BrandcoConnected\Firmware\stream\StreamSender_v3.ino.metro_m0.bin
+
+PUMP
+arduino-cli.exe upload -p COM52 -v --fqbn adafruit:samd:adafruit_feather_m0 --input-file C:\Github\BrandcoConnected\Firmware\pump\PumpSender_v3.bin
+
+FLOW
+arduino-cli.exe upload -p COM18 -v --fqbn adafruit:samd:adafruit_feather_m0 --input-file C:\Github\BrandcoConnected\Firmware\FLOW_Pcb2-3_fw2-7.bin  
+
+
+Pressure OG
+arduino-cli.exe upload -p COM28 --fqbn adafruit:samd:adafruit_feather_m0 --input-file C:\Github\BrandcoConnected\Firmware\PSI_Pcb2-3_fw2-7.bin

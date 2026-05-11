@@ -1,14 +1,14 @@
 Open command prompt and go to directory
-cd C:\Github\BrandcoConnected\Firmware
+cd C:\Github\Firmware
 
 # For programs with 0x2000 offset (default)
 python uf2conv.py mini/firmware.bin --convert --output mini/firmware.uf2
 
 # Display
-python uf2conv.py display/Display_v3.ino.feather_m0.bin --convert --output display/Display_v3-0.uf2
+python uf2conv.py display/RD3_fw3-4_pcb3-0.bin --convert --output display/RD3_fw3-4_pcb3-0.uf2
 
 # Mini v3
-python uf2conv.py mini/Mini_Pcb1_5_Fw3.bin --convert --output mini/Mini_v3-0.uf2
+python uf2conv.py mini/Mini3_fw3-1_pcb1-5.bin --convert --output mini/Mini3_fw3-1_pcb1-5.uf2
 
 # Pump
 python uf2conv.py pump/PumpSender_v3.ino.metro_m0.bin --convert --output pump/Pump_v3-0.uf2
